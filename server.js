@@ -3,11 +3,11 @@ const express = require('express');
 const app = express();
 
 // Serve static files
-app.use(express.static(__dirname + '/dist/coleccion-monedas-v2'));
+app.use(express.static(__dirname + '/dist/ColeccionMonedasV2'));
 
 // Send all requests to index.html
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/coleccion-monedas-v2/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/ColeccionMonedasV2/index.html'));
 });
 
 // default Heroku port
